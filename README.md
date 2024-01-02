@@ -2,6 +2,11 @@
 ![firstscreen](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/cbbe446f-a7d4-4341-ad6e-2477c5e81562)
 ### [https://luisrguerra.github.io/open-llm-cloud-webui/web/](https://luisrguerra.github.io/open-llm-cloud-webui/web/)
 
+# How to use
+- Access the link or the .html file via the web browser
+- Create api keys for Deepinfra, OpenRouter and OpenAI services
+- Go to options, and save the api keys
+
 # Screenshots
 ![options](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/92b0faee-bbe8-4507-a37f-00afe6c37b62)
 ![models](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/53bb9805-7528-4507-90e7-90b117c62404)
@@ -11,11 +16,6 @@
 ![viewprompt](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/0c796347-ae17-49e9-af43-416284ba4929)
 ![expand](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/e8ceb130-f0ed-4c0d-9cfe-9e50261f080d)
 ![resultchecker](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/1e734987-32a0-45e6-8a8e-311cf2858357)
-
-# How to use
-- Access the link or the .html file via the web browser
-- Create api keys for Deepinfra, OpenRouter and OpenAI services
-- Go to options, and save the api keys
 
 # License
 
