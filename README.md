@@ -12,6 +12,11 @@
 ![expand](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/e8ceb130-f0ed-4c0d-9cfe-9e50261f080d)
 ![resultchecker](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/1e734987-32a0-45e6-8a8e-311cf2858357)
 
+# How to use
+- Access the link or the .html file via the web browser
+- Create api keys for Deepinfra, OpenRouter and OpenAI services
+- Go to options, and save the api keys
+
 # License
 
 MIT License
