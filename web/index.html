@@ -59,10 +59,14 @@
  <button id="btnRegenerate" class="btn btn-outline-light prompt-button prompt-button-posterior">
   <span class="mdi mdi-refresh"> <span class="unnecessary-text">Regenerater</span></span>
  </button>
-  <!-- button verify information -->
-  <button id="btnVerifyInformation" class="btn btn-outline-light prompt-button prompt-button-posterior">
-    <span class="mdi mdi-shield-search"> <span class="unnecessary-text">Verify</span></span>
-  </button>
+ <!-- button verify information -->
+ <button id="btnVerifyInformation" class="btn btn-outline-light prompt-button prompt-button-posterior">
+   <span class="mdi mdi-shield-search"> <span class="unnecessary-text">Verify</span></span>
+ </button>
+ <!-- button open github -->
+ <button id="btnOpenGithub" class="btn btn-outline-light prompt-button prompt-button-posterior">
+   <span class="mdi mdi-github"> <span class="unnecessary-text">GitHub</span></span>
+ </button>
  <!-- expand text input button -->
  <button id="btnExpand" class="btn btn-outline-light prompt-button prompt-button-posterior">
   <span id="iconExpand" class="mdi mdi-arrow-expand-up"> <span id="btnExpandText" class="unnecessary-text">Expand</span></span>
@@ -831,6 +835,52 @@ async function onClickTextToSpeechButton(){
 }
 onClickTextToSpeechButton();
 
+async function onClickOpenGithub(){
+  const button = document.getElementById('btnOpenGithub');
+  button.addEventListener('click', async () => {
+    if(confirm("Do you want to access the project's GitHub?")){
+      window.location.href = "https://github.com/luisrguerra/open-llm-cloud-webui";
+    };
+  });
+}
+onClickOpenGithub();
+
+async function onClickSetOpenAiKeyButton(){
+  const button = document.getElementById('setOpenAiKeyButton');
+  button.addEventListener('click', async () => {
+    const newKey = prompt("Enter the new OpenAI API key:");
+    if (newKey != null) {
+      localStorage.setItem('openai-key', newKey);
+      alert("The new key was saved.");
+    }
+  });
+}
+onClickSetOpenAiKeyButton()
+
+async function onClickSetDeepinfraKeyButton(){
+  const button = document.getElementById('setDeepinfraKeyButton');
+  button.addEventListener('click', async () => {
+    const newKey = prompt("Enter the new Deepinfra API key:");
+    if (newKey != null) {
+      localStorage.setItem('deepinfra-key', newKey);
+      alert("The new key was saved.");
+    }
+  });
+}
+onClickSetDeepinfraKeyButton()
+
+async function onClickSetOpenrouterKeyButton(){
+  const button = document.getElementById('setOpenrouterKeyButton');
+  button.addEventListener('click', async () => {
+    const newKey = prompt("Enter the new Openrouter API key:");
+    if (newKey != null) {
+      localStorage.setItem('openrouter-key', newKey);
+      alert("The new key was saved.");
+    }
+  });
+}
+onClickSetOpenrouterKeyButton()
+
 
 /* End of event listener functions */
 
@@ -896,43 +946,7 @@ async function onClickVerifyInformation(){
     disableLoading();
   });
 }
-onClickVerifyInformation()
-
-async function onClickSetOpenAiKeyButton(){
-  const button = document.getElementById('setOpenAiKeyButton');
-  button.addEventListener('click', async () => {
-    const newKey = prompt("Enter the new OpenAI API key:");
-    if (newKey != null) {
-      localStorage.setItem('openai-key', newKey);
-      alert("The new key was saved.");
-    }
-  });
-}
-onClickSetOpenAiKeyButton()
-
-async function onClickSetDeepinfraKeyButton(){
-  const button = document.getElementById('setDeepinfraKeyButton');
-  button.addEventListener('click', async () => {
-    const newKey = prompt("Enter the new Deepinfra API key:");
-    if (newKey != null) {
-      localStorage.setItem('deepinfra-key', newKey);
-      alert("The new key was saved.");
-    }
-  });
-}
-onClickSetDeepinfraKeyButton()
-
-async function onClickSetOpenrouterKeyButton(){
-  const button = document.getElementById('setOpenrouterKeyButton');
-  button.addEventListener('click', async () => {
-    const newKey = prompt("Enter the new Openrouter API key:");
-    if (newKey != null) {
-      localStorage.setItem('openrouter-key', newKey);
-      alert("The new key was saved.");
-    }
-  });
-}
-onClickSetOpenrouterKeyButton()
+onClickVerifyInformation();
 
 /* end of code of verification of information */
 
