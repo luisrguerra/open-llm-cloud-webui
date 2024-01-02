@@ -7,6 +7,13 @@
 - Create api keys for Deepinfra, OpenRouter and OpenAI services
 - Go to options, and save the api keys
 
+# Api services
+[https://deepinfra.com/](https://deepinfra.com/)
+
+[https://openrouter.ai/](https://openrouter.ai/)
+
+[https://openai.com/product](https://openai.com/product)
+
 # Screenshots
 ![options](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/92b0faee-bbe8-4507-a37f-00afe6c37b62)
 ![models](https://github.com/luisrguerra/open-llm-cloud-webui/assets/31783838/53bb9805-7528-4507-90e7-90b117c62404)
