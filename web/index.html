@@ -838,9 +838,7 @@ onClickTextToSpeechButton();
 async function onClickOpenGithub(){
   const button = document.getElementById('btnOpenGithub');
   button.addEventListener('click', async () => {
-    if(confirm("Do you want to access the project's GitHub?")){
-      window.location.href = "https://github.com/luisrguerra/open-llm-cloud-webui";
-    };
+    window.open("https://github.com/luisrguerra/open-llm-cloud-webui", "_blank");
   });
 }
 onClickOpenGithub();
