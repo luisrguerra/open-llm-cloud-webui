@@ -650,7 +650,7 @@ function setTextByID(text, id){
   element.innerText = text;
 }
 
-function setButtonEnviarText(text){
+function setButtonSendText(text){
   const element = document.getElementById('btnSendUserInput');
   element.innerHTML = text;
 }
@@ -667,14 +667,14 @@ function enableLoading(){
   loading = true;
   disableUserInteraction();
   const loadingIcon = '<span class="mdi mdi-loading mdi-spin"></span>';
-  setButtonEnviarText(loadingIcon);
+  setButtonSendText(loadingIcon);
 }
 
 function disableLoading(){
   loading = false;
   enableUserInteraction();
   const sendIcon = '<span class="mdi mdi-send"></span>';
-  setButtonEnviarText(sendIcon);
+  setButtonSendText(sendIcon);
   clearInput()
 }
 
@@ -769,7 +769,7 @@ async function onChangeModeSelect(){
 }
 onChangeModeSelect();
 
-async function onClickEnviarButton(){
+async function onClickSendButton(){
   const element = document.getElementById('btnSendUserInput');
   element.addEventListener('click', async () => {
 
@@ -790,7 +790,7 @@ async function onClickEnviarButton(){
 
   });
 }
-onClickEnviarButton();
+onClickSendButton();
 
 async function onClickClearChatButton(){
   const button = document.getElementById('btnClearChat');
