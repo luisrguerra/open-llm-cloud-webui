@@ -1,4 +1,4 @@
-button#promptMenuButton, button#promptMenuButton:disabled{
+button.stylized, button.stylized:disabled{
   /* display:none; */
   color: initial;
   border-color: initial;
@@ -39,7 +39,7 @@ select.theme:focus,select.theme:active{
 }
 
 @media only screen and (min-width: 600px) {
-    button#promptMenuButton{
+    button.stylized{
       margin-inline: 0.25em;
     }
     div.selectors{
