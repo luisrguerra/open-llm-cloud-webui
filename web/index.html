@@ -446,7 +446,7 @@ function interruptTextToSpeech(){
 
 let textToSpeechVoices;
 speechSynthesis.addEventListener("voiceschanged", () => {
-  textToSpeechVoices = speechSynthesis.getVoices()
+  textToSpeechVoices = speechSynthesis.getVoices();
 });
 
 function isVoiceAvailable(voiceName) {
@@ -463,8 +463,8 @@ function findVoiceByName(voiceName) {
 }
 
 function setupVoiceBrowser(voice){
-  const preferenceVoice = "Microsoft Antonio Online (Natural) - Portuguese (Brazil)";
-  //const preferenceVoice = "Microsoft Francisca Online (Natural) - Portuguese (Brazil)";
+  const preferenceVoice = "Microsoft Guy Online (Natural) - English (United States)";
+  //const preferenceVoice = "Aria Online (Natural) - English (United States)";
   if (isVoiceAvailable(preferenceVoice)){
     voice.voice = findVoiceByName(preferenceVoice);
   }
